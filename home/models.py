@@ -51,7 +51,7 @@ class Hmhgfhgf(models.Model):
     jhgjhgj = models.BigIntegerField(
         blank=True,
     )
-    wrewtqwe = models.ForeignKey(
+    wrewtqwewetq43tq45trtwertwertwertwertertwe = models.ForeignKey(
         "home.HomePage",
         null=True,
         blank=True,
