@@ -12,9 +12,9 @@ class CustomText(models.Model):
     )
     hgjfhgg = models.OneToOneField(
         "home.CustomText",
-        on_delete=models.SET_NULL,
         null=True,
         blank=True,
+        on_delete=models.SET_NULL,
         related_name="customtext_hgjfhgg",
     )
 
@@ -32,6 +32,10 @@ class CustomText(models.Model):
 
 class HomePage(models.Model):
     body = models.TextField()
+    sdrgadrtgwgs = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
 
     @property
     def api(self):
@@ -47,9 +51,9 @@ class Hmhgfhgf(models.Model):
     jhgjhgj = models.BigIntegerField()
     hgfhgfhgfh = models.ForeignKey(
         "home.HomePage",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="hmhgfhgf_hgfhgfhgfh",
     )
     hgfhfgfhgf = models.ManyToManyField(

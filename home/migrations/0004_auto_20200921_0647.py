@@ -9,23 +9,39 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0003_hmhgfhgf'),
+        ("home", "0003_hmhgfhgf"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='customtext',
-            name='hgjfhgg',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='customtext_hgjfhgg', to='home.CustomText'),
+            model_name="customtext",
+            name="hgjfhgg",
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name="customtext_hgjfhgg",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='hmhgfhgf',
-            name='hgfhfgfhgf',
-            field=models.ManyToManyField(blank=True, related_name='hmhgfhgf_hgfhfgfhgf', to=settings.AUTH_USER_MODEL),
+            model_name="hmhgfhgf",
+            name="hgfhfgfhgf",
+            field=models.ManyToManyField(
+                blank=True,
+                related_name="hmhgfhgf_hgfhfgfhgf",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
         migrations.AddField(
-            model_name='hmhgfhgf',
-            name='hgfhgfhgfh',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='hmhgfhgf_hgfhgfhgfh', to='home.HomePage'),
+            model_name="hmhgfhgf",
+            name="hgfhgfhgfh",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="hmhgfhgf_hgfhgfhgfh",
+                to="home.HomePage",
+            ),
         ),
     ]
