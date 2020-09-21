@@ -48,8 +48,10 @@ class HomePage(models.Model):
 
 class Hmhgfhgf(models.Model):
     "Generated Model"
-    jhgjhgj = models.BigIntegerField()
-    hgfhgfhgfh = models.ForeignKey(
+    jhgjhgj = models.BigIntegerField(
+        blank=True,
+    )
+    wrewtqwe = models.ForeignKey(
         "home.HomePage",
         null=True,
         blank=True,
